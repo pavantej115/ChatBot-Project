@@ -1,0 +1,11 @@
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Virtual environment
+venv/
+
+# Node.js (if used for front end)
+node_modules/
