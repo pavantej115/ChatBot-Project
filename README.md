@@ -1,2 +1,2 @@
 # ChatBot-Project
-Chatbot using OpenAI API with CI/CD and AWS deployment.
+Chatbot using OpenAI API with CI/CD and AWS deployment
