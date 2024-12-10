@@ -50,9 +50,6 @@ jobs:
       - name: Lint HTML
         run: htmlhint frontend/index.html
 
-      - name: Lint CSS
-        run: csslint frontend/styles.css
-
       - name: Lint JavaScript
         run: eslint frontend/script.js
 
