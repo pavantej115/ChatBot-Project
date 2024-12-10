@@ -51,7 +51,7 @@ jobs:
         run: htmlhint frontend/index.html
 
       - name: Lint JavaScript
-        run: eslint frontend/script.js
+        run: eslint frontend/script.js --config frontend/eslint.config.js
 
   # Deployment to EC2
   deploy:
