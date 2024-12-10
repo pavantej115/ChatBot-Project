@@ -66,6 +66,10 @@ jobs:
           echo "${{ secrets.EC2_KEY }}" > ec2_key.pem
           chmod 600 ec2_key.pem
 
+      - name: Create .ssh directory if it doesn't exist
+        run: |
+          mkdir -p ~/.ssh
+
       - name: Add EC2 Host to Known Hosts
         run: |
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
@@ -81,4 +85,5 @@ jobs:
           cd backend
           nohup python app.py &
           EOF
+
 
