@@ -18,7 +18,7 @@ document.getElementById('send-btn').addEventListener('click', async function() {
 
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/chat', {
+        const response = await fetch('http://54.85.134.47:5000/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,5 +44,5 @@ document.getElementById('send-btn').addEventListener('click', async function() {
         document.getElementById('chat-container').appendChild(errorDiv);
     }
 
-    
+
 });
