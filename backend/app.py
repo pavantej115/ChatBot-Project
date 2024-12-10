@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import openai
+from flask_cors import CORS
 from dotenv import load_dotenv
 import os
 
@@ -9,10 +10,11 @@ load_dotenv()
 # Initialize the Flask app
 app = Flask(__name__)
 
+CORS(app)
+
 # Set up OpenAI API key from environment variable
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-print("OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
 
 # Define the root route
 @app.route('/')
