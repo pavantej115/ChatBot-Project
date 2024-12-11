@@ -9,7 +9,6 @@ document.getElementById('send-btn').addEventListener('click', async function() {
     userMessageDiv.textContent = `You: ${userMessage}`;
     document.getElementById('chat-container').appendChild(userMessageDiv);
 
-    // Clear the input field
     document.getElementById('user-input').value = "";
 
 
