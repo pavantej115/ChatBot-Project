@@ -3,7 +3,7 @@ import json
 from app import app  # Import the Flask app from app.py
 
 class FlaskTestCase(unittest.TestCase):
-    # Set up the test client
+    # Set up test client
     def setUp(self):
         self.client = app.test_client()
 
