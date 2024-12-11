@@ -42,6 +42,7 @@ def chat():
         # Extract the response text from the OpenAI API result
         chatbot_response = response['choices'][0]['message']['content'].strip()
 
+
         # Return the chatbot response
         return jsonify({'response': chatbot_response})
 

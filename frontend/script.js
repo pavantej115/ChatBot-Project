@@ -29,12 +29,14 @@ document.getElementById('send-btn').addEventListener('click', async function() {
         const data = await response.json();
 
         // Add bot response to the chat container
+
         const botMessageDiv = document.createElement('div');
         botMessageDiv.classList.add('bot-message');
         botMessageDiv.textContent = `Bot: ${data.response}`;
         document.getElementById('chat-container').appendChild(botMessageDiv);
 
         // Scroll to the bottom of the chat container
+        
         const chatContainer = document.getElementById('chat-container');
         chatContainer.scrollTop = chatContainer.scrollHeight;
 
