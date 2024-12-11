@@ -84,7 +84,6 @@ jobs:
           cd backend
           nohup python app.py &
   
-          # Install web server (Apache as an example)
           sudo apt-get update
           sudo apt-get install -y apache2
           sudo cp /path/to/project/frontend/index.html /var/www/html/index.html
